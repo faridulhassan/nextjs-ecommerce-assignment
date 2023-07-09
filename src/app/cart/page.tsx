@@ -271,11 +271,9 @@ const demoProductsList: Product[] = [
     },
   },
 ];
-export default function Cart({
-  cartItems = [...demoProductsList],
-}: {
-  cartItems: Product[];
-}) {
+export default function Cart() {
+  const cartItems = [...demoProductsList];
+
   return (
     <div>
       <h1 className="text-3xl font-bold text-slate-800 mb-7">My Cart</h1>
